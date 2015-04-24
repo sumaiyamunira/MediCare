@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bar"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="90dip"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/Button_HealthReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dip"
+            android:text="Health Reminder"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Button_nearestDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dip"
+            android:layout_marginTop="105dp"
+            android:padding="5dip"
+            android:text="Neartest Doctor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_NearestHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dip"
+            android:layout_marginTop="114dp"
+            android:padding="5dip"
+            android:text="Nearest Hospital"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Button_NeartestPharmacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dip"
+            android:layout_marginTop="105dp"
+            android:text="Nearest Pharmacy"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_EmergencyAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dip"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="105dp"
+            android:text="Emergency Alert"
+            android:textStyle="bold" />
+        
+         <Button
+            android:id="@+id/button_BMICalculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dip"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="105dp"
+            android:text="BMI Calculator"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

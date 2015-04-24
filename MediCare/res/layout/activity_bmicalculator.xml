@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bar"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+
+            <ImageButton
+                android:id="@+id/imageButton_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/back_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText1_bodyweight"
+        android:layout_width="130dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_body"
+        android:layout_alignBottom="@+id/textView_body"
+        android:layout_alignLeft="@+id/spinner_fit"
+        android:layout_below="@+id/linearLayout1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:text="55.0" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01_height"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="40dp"
+        android:text="Body Weight (kg)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView01_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1_calculate"
+        android:layout_alignTop="@+id/spinner_fit"
+        android:text="Height (Fit&apos;Inch&quot;)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_fit"
+        android:layout_width="130dip"
+        android:layout_height="50dip"
+        android:layout_alignRight="@+id/button1_calculate"
+        android:layout_below="@+id/editText1_bodyweight"
+        android:layout_marginTop="25dp" />
+
+    <Spinner
+        android:id="@+id/Spinner01_inch"
+        android:layout_width="130dip"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/spinner_fit"
+        android:layout_below="@+id/spinner_fit"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:id="@+id/button1_calculate"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dip"
+        android:text="Calculate BMI" />
+
+</RelativeLayout>

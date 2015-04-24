@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MediCare</string>
+    <string name="app_name_emergency">Emergency Button</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="place_type">
+        <item>hospital</item>
+        <item>pharmacy</item>
+        <item>doctor</item>
+    </string-array>
+    <string-array name="place_type1">
+        <item>doctor</item>
+    </string-array>
+    <string-array name="place_type2">
+        <item>pharmacy</item>
+    </string-array>
+
+    <string name="title_activity_list_view__hospital">Fastest MediCare : Hospital</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_nearest_hospital">NearestHospital</string>
+    <string name="title_activity_eprescription">EPrescription</string>
+    <string name="title_activity_add_prescription">AddPrescription</string>
+    <string name="title_activity_nearest_medical_store">NearestMedicalStore</string>
+    <string name="title_activity_nearest_doctor">NearestDoctor</string>
+    <string name="title_activity_emergency_alert">EmergencyAlert</string>
+    <string name="title_activity_emergency_button">EmergencyButton</string>
+    <string name="title_activity_near_by_place">NearByPlace</string>
+    <string name="title_activity_bmicalculator">BMICalculator</string>
+    <string name="title_activity_health_reminder">HealthReminder</string>
+    <string name="title_activity_add_health_reminder">AddHealthReminder</string>
+    <string name="title_activity_add_health_reminder__medicine">AddHealthReminder_Medicine</string>
+    <string name="title_activity_add_health_reminder__appoinment">AddHealthReminder_Appoinment</string>
+    <string name="title_activity_show_reminder_details">ShowReminderDetails</string>
+
+</resources>

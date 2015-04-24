@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:padding="13dip" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark" >
+
+        <ImageView
+            android:id="@+id/imageView_edit"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/edit_icon" />
+
+        <TextView
+            android:id="@+id/textView1_ReminderDetails"
+            android:layout_width="210dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:text="Medicine Name"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:layout_below="@+id/relative_layout1"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/textView_startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="5dp"
+            android:text="Start Date\n10/12/2014"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_endDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="End Date\n10/12/2014 "
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_doesPerDay_or_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_startDate"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dip"
+            android:layout_marginBottom="5dip"
+            android:text="Does Perday: 5"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

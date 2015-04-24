@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/top_bar" >
+
+        <ImageButton
+            android:id="@+id/imageButton_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back_selector" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView_editicon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_DoctorName"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="37dp"
+        android:src="@drawable/edit_icon_row" />
+
+    <TextView
+        android:id="@+id/textView_alarmSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageButton1"
+        android:layout_below="@+id/imageButton1"
+        android:text=" Alarm\nSetting" />
+
+    <TextView
+        android:id="@+id/textView_addMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton_addMedicine"
+        android:layout_below="@+id/imageButton_addMedicine"
+        android:text=" \tAdd \n Medicine" />
+
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dip"
+        android:text="Done" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText_DoctorName"
+        android:layout_below="@+id/editText_DoctorName"
+        android:layout_marginRight="57dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/setting_selector" />
+
+    <ImageButton
+        android:id="@+id/imageButton_addMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton1"
+        android:layout_toRightOf="@+id/ImageView_editicon1"
+        android:background="@drawable/add_selector" />
+
+    <EditText
+        android:id="@+id/editText_DoctorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_prescriptionID"
+        android:layout_below="@+id/editText_prescriptionID"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:text="Doctor Name" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_alignBottom="@+id/button_done"
+        android:layout_alignRight="@+id/textView_addMedicine"
+        android:text="Cancel" />
+
+    <EditText
+        android:id="@+id/editText_prescriptionID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton_addMedicine"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:text="Prescription ID" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/ImageView_editicon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton1"
+        android:layout_alignLeft="@+id/imageView_editicon2"
+        android:src="@drawable/edit_icon_row" />
+
+</RelativeLayout>
